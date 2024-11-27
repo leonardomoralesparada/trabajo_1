@@ -1,0 +1,309 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: 20px; 
+    margin-right: 20px;
+    
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    margin-right: 40rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Sevillana", serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion__foto{
+  width: 250px; 
+  height: 300px; 
+  border-radius: 90%; 
+  object-fit: cover; 
+  border: 3px solid #ccc; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+
+}
+
+.presentacion{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.redes__img{
+    display: inline;
+    margin-right: 50px;
+    
+}
+
+.enlace{
+    color: blue;
+    font-size: 20px;
+}
+ .enlace:hover{
+    color: aqua;
+ }
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.sobre-mi__firma{
+    width: 100px;
+}
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades__titulo{
+    text-align: center;
+}
+
+.habilidades__lista{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones__titulo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.aficiones__lista{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------------------------seccion de formacion academica---------------------------*/
+
+.formacion__titulo{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formacion__lista{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.formacion__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos__titulo {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.proyectos__contenedor {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.proyectos__nombre {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.proyectos__descripcion {
+    font-size: 1rem;
+    color: #555555;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__titulo {
+    font-size: 1.8rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto__campo {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.contacto__campo:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contacto__campo--textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contacto__boton {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto__boton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.contacto__boton:active {
+    transform: scale(0.95);
+}
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
